@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationDrawerViewController" customModule="VentAX" customModuleProvider="target">
+            <connections>
+                <outlet property="itemsTableView" destination="lVg-DW-Xft" id="3fv-ba-fTC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mi5-OI-CG2">
+                    <rect key="frame" x="5" y="64" width="404" height="788"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lVg-DW-Xft">
+                            <rect key="frame" x="0.0" y="0.0" width="404" height="788"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="lVg-DW-Xft" firstAttribute="top" secondItem="mi5-OI-CG2" secondAttribute="top" id="6gV-Uw-u06"/>
+                        <constraint firstAttribute="trailing" secondItem="lVg-DW-Xft" secondAttribute="trailing" id="Dba-tc-b5o"/>
+                        <constraint firstItem="lVg-DW-Xft" firstAttribute="leading" secondItem="mi5-OI-CG2" secondAttribute="leading" id="LEe-df-u1k"/>
+                        <constraint firstAttribute="bottom" secondItem="lVg-DW-Xft" secondAttribute="bottom" id="YWs-up-GZc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="blueVentax"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mi5-OI-CG2" secondAttribute="trailing" constant="5" id="Nb7-LE-qkR"/>
+                <constraint firstItem="mi5-OI-CG2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="ahH-gE-ru9"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mi5-OI-CG2" secondAttribute="bottom" constant="10" id="b70-ec-6gU"/>
+                <constraint firstItem="mi5-OI-CG2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="qsf-QT-ODG"/>
+            </constraints>
+            <point key="canvasLocation" x="141" y="48"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="blueVentax">
+            <color red="0.0" green="0.61176470588235299" blue="0.90588235294117647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

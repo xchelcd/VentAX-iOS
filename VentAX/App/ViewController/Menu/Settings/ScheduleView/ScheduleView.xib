@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScheduleView" customModule="VentAX" customModuleProvider="target">
+            <connections>
+                <outlet property="parentView" destination="iN0-l3-epB" id="Oqv-vc-HES"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="521" height="456"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MI9-xp-LDA">
+                    <rect key="frame" x="0.0" y="44" width="521" height="378"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OmL-xE-UT6">
+                            <rect key="frame" x="0.0" y="0.0" width="521" height="378"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="12Z-1f-dK7">
+                                    <rect key="frame" x="0.0" y="0.0" width="521" height="34.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cambia tu horarios ↓" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBU-CW-jbr">
+                                            <rect key="frame" x="30" y="0.0" width="461" height="34.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLj-aV-dQe">
+                                            <rect key="frame" x="0.0" y="0.0" width="55" height="34.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="55" id="yNZ-Vb-HCy"/>
+                                            </constraints>
+                                            <state key="normal" image="info.circle" catalog="system"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="mBU-CW-jbr" secondAttribute="bottom" id="1SD-po-Hmd"/>
+                                        <constraint firstItem="hLj-aV-dQe" firstAttribute="leading" secondItem="12Z-1f-dK7" secondAttribute="leading" id="4Wa-fJ-yMn"/>
+                                        <constraint firstItem="mBU-CW-jbr" firstAttribute="top" secondItem="12Z-1f-dK7" secondAttribute="top" id="6fz-3Y-sWc"/>
+                                        <constraint firstAttribute="bottom" secondItem="hLj-aV-dQe" secondAttribute="bottom" id="CXm-PX-Apt"/>
+                                        <constraint firstAttribute="trailing" secondItem="mBU-CW-jbr" secondAttribute="trailing" constant="30" id="Oce-rU-viJ"/>
+                                        <constraint firstItem="mBU-CW-jbr" firstAttribute="leading" secondItem="12Z-1f-dK7" secondAttribute="leading" constant="30" id="VGV-MQ-786"/>
+                                        <constraint firstItem="hLj-aV-dQe" firstAttribute="top" secondItem="12Z-1f-dK7" secondAttribute="top" id="rSh-Ya-R7Y"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dol-lB-s7j">
+                                    <rect key="frame" x="0.0" y="34.5" width="521" height="343.5"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DIq-9O-1BQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="521" height="49"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jh2-St-tsf">
+                                                    <rect key="frame" x="10" y="4.5" width="501" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lunes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bX8-CN-jhF">
+                                                            <rect key="frame" x="0.0" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRh-Sa-AnE">
+                                                            <rect key="frame" x="167" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <state key="normal" title=" APERTURA" image="hourglass.start" catalog="system">
+                                                                <color key="titleColor" name="grayScheduleVentax"/>
+                                                            </state>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyw-kq-68k">
+                                                            <rect key="frame" x="334" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <state key="normal" title=" CIERRE" image="hourglass.end" catalog="system">
+                                                                <color key="titleColor" name="grayScheduleVentax"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="J7Z-tG-IBx"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="jh2-St-tsf" firstAttribute="centerY" secondItem="DIq-9O-1BQ" secondAttribute="centerY" id="9oi-wi-kwU"/>
+                                                <constraint firstAttribute="trailing" secondItem="jh2-St-tsf" secondAttribute="trailing" constant="10" id="Bzf-YM-d0m"/>
+                                                <constraint firstItem="jh2-St-tsf" firstAttribute="centerX" secondItem="DIq-9O-1BQ" secondAttribute="centerX" id="Juw-Jb-L0W"/>
+                                                <constraint firstItem="jh2-St-tsf" firstAttribute="leading" secondItem="DIq-9O-1BQ" secondAttribute="leading" constant="10" id="S7b-5s-e1Y"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6TY-HY-n0g">
+                                            <rect key="frame" x="0.0" y="49" width="521" height="49"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xay-aW-9X7">
+                                                    <rect key="frame" x="10" y="4.5" width="501" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Martes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TvV-Mz-L0p">
+                                                            <rect key="frame" x="0.0" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhe-RS-PIO">
+                                                            <rect key="frame" x="167" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <state key="normal" title=" APERTURA" image="hourglass.start" catalog="system">
+                                                                <color key="titleColor" name="grayScheduleVentax"/>
+                                                            </state>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjV-Wl-5xz">
+                                                            <rect key="frame" x="334" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <state key="normal" title=" CIERRE" image="hourglass.end" catalog="system">
+                                                                <color key="titleColor" name="grayScheduleVentax"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="3wX-dm-8ZJ"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="xay-aW-9X7" secondAttribute="trailing" constant="10" id="9Lx-g0-POY"/>
+                                                <constraint firstItem="xay-aW-9X7" firstAttribute="centerY" secondItem="6TY-HY-n0g" secondAttribute="centerY" id="cii-ge-ULU"/>
+                                                <constraint firstItem="xay-aW-9X7" firstAttribute="centerX" secondItem="6TY-HY-n0g" secondAttribute="centerX" id="g0y-gz-MGW"/>
+                                                <constraint firstItem="xay-aW-9X7" firstAttribute="leading" secondItem="6TY-HY-n0g" secondAttribute="leading" constant="10" id="jlS-av-3jW"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i6c-r6-vbE">
+                                            <rect key="frame" x="0.0" y="98" width="521" height="49"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cku-oK-tp6">
+                                                    <rect key="frame" x="10" y="4.5" width="501" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miércoles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hD1-xc-f3c">
+                                                            <rect key="frame" x="0.0" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLz-39-N7X">
+                                                            <rect key="frame" x="167" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <state key="normal" title=" APERTURA" image="hourglass.start" catalog="system">
+                                                                <color key="titleColor" name="grayScheduleVentax"/>
+                                                            </state>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1N4-2R-PI7">
+                                                            <rect key="frame" x="334" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <state key="normal" title=" CIERRE" image="hourglass.end" catalog="system">
+                                                                <color key="titleColor" name="grayScheduleVentax"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="J4a-Nk-TsK"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="cku-oK-tp6" firstAttribute="centerX" secondItem="i6c-r6-vbE" secondAttribute="centerX" id="OMh-9a-oT8"/>
+                                                <constraint firstItem="cku-oK-tp6" firstAttribute="leading" secondItem="i6c-r6-vbE" secondAttribute="leading" constant="10" id="QCC-uI-CcO"/>
+                                                <constraint firstAttribute="trailing" secondItem="cku-oK-tp6" secondAttribute="trailing" constant="10" id="gZf-vb-la5"/>
+                                                <constraint firstItem="cku-oK-tp6" firstAttribute="centerY" secondItem="i6c-r6-vbE" secondAttribute="centerY" id="nSR-Uv-rLc"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PfS-tV-0wd">
+                                            <rect key="frame" x="0.0" y="147" width="521" height="49"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cDi-za-DY9">
+                                                    <rect key="frame" x="10" y="4.5" width="501" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jueves" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpq-hl-D3T">
+                                                            <rect key="frame" x="0.0" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3G-10-Cih">
+                                                            <rect key="frame" x="167" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <state key="normal" title=" APERTURA" image="hourglass.start" catalog="system">
+                                                                <color key="titleColor" name="grayScheduleVentax"/>
+                                                            </state>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kP-Il-QHr">
+                                                            <rect key="frame" x="334" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <state key="normal" title=" CIERRE" image="hourglass.end" catalog="system">
+                                                                <color key="titleColor" name="grayScheduleVentax"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="MEi-7i-Wgz"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="cDi-za-DY9" firstAttribute="centerY" secondItem="PfS-tV-0wd" secondAttribute="centerY" id="Nvz-5t-po4"/>
+                                                <constraint firstItem="cDi-za-DY9" firstAttribute="centerX" secondItem="PfS-tV-0wd" secondAttribute="centerX" id="WeP-h6-ndf"/>
+                                                <constraint firstAttribute="trailing" secondItem="cDi-za-DY9" secondAttribute="trailing" constant="10" id="eIr-LI-QMi"/>
+                                                <constraint firstItem="cDi-za-DY9" firstAttribute="leading" secondItem="PfS-tV-0wd" secondAttribute="leading" constant="10" id="vKp-X9-r7c"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Db1-up-0n0">
+                                            <rect key="frame" x="0.0" y="196" width="521" height="49.5"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fcC-v7-sBW">
+                                                    <rect key="frame" x="10" y="5" width="501" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viernes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="biz-0n-xwA">
+                                                            <rect key="frame" x="0.0" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKe-N8-mUJ">
+                                                            <rect key="frame" x="167" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <state key="normal" title=" APERTURA" image="hourglass.start" catalog="system">
+                                                                <color key="titleColor" name="grayScheduleVentax"/>
+                                                            </state>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuO-Go-smL">
+                                                            <rect key="frame" x="334" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <state key="normal" title=" CIERRE" image="hourglass.end" catalog="system">
+                                                                <color key="titleColor" name="grayScheduleVentax"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="PFl-WN-dmn"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="fcC-v7-sBW" firstAttribute="centerX" secondItem="Db1-up-0n0" secondAttribute="centerX" id="Abb-je-Z5Y"/>
+                                                <constraint firstItem="fcC-v7-sBW" firstAttribute="centerY" secondItem="Db1-up-0n0" secondAttribute="centerY" id="Cke-f6-tSn"/>
+                                                <constraint firstItem="fcC-v7-sBW" firstAttribute="leading" secondItem="Db1-up-0n0" secondAttribute="leading" constant="10" id="Sbx-zo-qqV"/>
+                                                <constraint firstAttribute="trailing" secondItem="fcC-v7-sBW" secondAttribute="trailing" constant="10" id="dyH-pH-tCE"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZWk-ni-uh0">
+                                            <rect key="frame" x="0.0" y="245.5" width="521" height="49"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="fNm-mH-o8p">
+                                                    <rect key="frame" x="10" y="4.5" width="501" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sábado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6RO-1g-boD">
+                                                            <rect key="frame" x="0.0" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCg-VO-rgf">
+                                                            <rect key="frame" x="167" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <state key="normal" title=" APERTURA" image="hourglass.start" catalog="system">
+                                                                <color key="titleColor" name="grayScheduleVentax"/>
+                                                            </state>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0G-YA-LJa">
+                                                            <rect key="frame" x="334" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <state key="normal" title=" CIERRE" image="hourglass.end" catalog="system">
+                                                                <color key="titleColor" name="grayScheduleVentax"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="blu-Ru-CuH"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="fNm-mH-o8p" firstAttribute="centerY" secondItem="ZWk-ni-uh0" secondAttribute="centerY" id="1pu-wA-bjt"/>
+                                                <constraint firstAttribute="trailing" secondItem="fNm-mH-o8p" secondAttribute="trailing" constant="10" id="PVJ-gs-cwR"/>
+                                                <constraint firstItem="fNm-mH-o8p" firstAttribute="leading" secondItem="ZWk-ni-uh0" secondAttribute="leading" constant="10" id="Paa-OX-UTQ"/>
+                                                <constraint firstItem="fNm-mH-o8p" firstAttribute="centerX" secondItem="ZWk-ni-uh0" secondAttribute="centerX" id="syq-M3-QtQ"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lMX-94-KkV">
+                                            <rect key="frame" x="0.0" y="294.5" width="521" height="49"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="AUp-fr-Pc9">
+                                                    <rect key="frame" x="10" y="4.5" width="501" height="40"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Domingo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehT-He-AGM">
+                                                            <rect key="frame" x="0.0" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfd-JB-9RM">
+                                                            <rect key="frame" x="167" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <state key="normal" title=" APERTURA" image="hourglass.start" catalog="system">
+                                                                <color key="titleColor" name="grayScheduleVentax"/>
+                                                            </state>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w12-c3-MLB">
+                                                            <rect key="frame" x="334" y="0.0" width="167" height="40"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                            <state key="normal" title=" CIERRE" image="hourglass.end" catalog="system">
+                                                                <color key="titleColor" name="grayScheduleVentax"/>
+                                                            </state>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="HfI-yV-huT"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="AUp-fr-Pc9" firstAttribute="centerY" secondItem="lMX-94-KkV" secondAttribute="centerY" id="Dgb-Dj-ABO"/>
+                                                <constraint firstItem="AUp-fr-Pc9" firstAttribute="centerX" secondItem="lMX-94-KkV" secondAttribute="centerX" id="Its-AP-hp1"/>
+                                                <constraint firstAttribute="trailing" secondItem="AUp-fr-Pc9" secondAttribute="trailing" constant="10" id="nff-oZ-NUP"/>
+                                                <constraint firstItem="AUp-fr-Pc9" firstAttribute="leading" secondItem="lMX-94-KkV" secondAttribute="leading" constant="10" id="upJ-hx-uEE"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="dol-lB-s7j" firstAttribute="height" secondItem="12Z-1f-dK7" secondAttribute="height" multiplier="10" id="Yal-9l-L1a"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="whiteVentax"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="OmL-xE-UT6" secondAttribute="bottom" id="eZ0-mt-YHK"/>
+                        <constraint firstAttribute="trailing" secondItem="OmL-xE-UT6" secondAttribute="trailing" id="mcn-VI-E7m"/>
+                        <constraint firstItem="OmL-xE-UT6" firstAttribute="top" secondItem="MI9-xp-LDA" secondAttribute="top" id="uMt-Nf-5gQ"/>
+                        <constraint firstItem="OmL-xE-UT6" firstAttribute="leading" secondItem="MI9-xp-LDA" secondAttribute="leading" id="zay-et-wMN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="MI9-xp-LDA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="58r-qd-igD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="MI9-xp-LDA" secondAttribute="bottom" id="K8K-XQ-noy"/>
+                <constraint firstItem="MI9-xp-LDA" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="baT-zs-A9W"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MI9-xp-LDA" secondAttribute="trailing" id="wcN-9q-aeO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="93.478260869565219" y="-60.9375"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hourglass.end" catalog="system" width="109" height="128"/>
+        <image name="hourglass.start" catalog="system" width="109" height="128"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <namedColor name="grayScheduleVentax">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.15000000596046448" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteVentax">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

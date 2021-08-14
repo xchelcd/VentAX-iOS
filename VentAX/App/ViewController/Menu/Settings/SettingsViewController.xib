@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="VentAX" customModuleProvider="target">
+            <connections>
+                <outlet property="mainView" destination="5fK-JM-Flb" id="Dpw-z2-kij"/>
+                <outlet property="saveAllOutlet" destination="wq3-yM-Kp8" id="mpb-E5-UmP"/>
+                <outlet property="secondaryView" destination="0dz-F6-mGZ" id="wnC-ku-OEh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fxv-Ln-Sa1">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hup-ep-Wkk">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71q-ws-r2c">
+                                    <rect key="frame" x="15" y="7.5" width="45" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="UVg-aL-VwP"/>
+                                        <constraint firstAttribute="width" constant="45" id="UwA-bL-R1V"/>
+                                    </constraints>
+                                    <color key="tintColor" name="fucsiaVentax"/>
+                                    <state key="normal">
+                                        <imageReference key="image" image="sidebar.leading" catalog="system" renderingMode="template"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="sideMenuButton:" destination="-1" eventType="touchUpInside" id="TZi-oX-2Hn"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Configuraciones" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzs-XA-FoN">
+                                    <rect key="frame" x="70" y="13.5" width="334" height="33.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" name="whiteVentax"/>
+                            <constraints>
+                                <constraint firstItem="mzs-XA-FoN" firstAttribute="centerY" secondItem="Hup-ep-Wkk" secondAttribute="centerY" id="5oj-Kz-kNY"/>
+                                <constraint firstItem="mzs-XA-FoN" firstAttribute="leading" secondItem="71q-ws-r2c" secondAttribute="trailing" constant="10" id="WnP-v2-mz1"/>
+                                <constraint firstAttribute="height" constant="60" id="bOw-Ud-x1k"/>
+                                <constraint firstAttribute="trailing" secondItem="mzs-XA-FoN" secondAttribute="trailing" constant="10" id="etp-2p-aLO"/>
+                                <constraint firstItem="71q-ws-r2c" firstAttribute="leading" secondItem="Hup-ep-Wkk" secondAttribute="leading" constant="15" id="oRJ-yh-7Ai"/>
+                                <constraint firstItem="71q-ws-r2c" firstAttribute="centerY" secondItem="Hup-ep-Wkk" secondAttribute="centerY" id="pSn-df-zfT"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fK-JM-Flb">
+                            <rect key="frame" x="15" y="60" width="384" height="200"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CGB-UN-ueD">
+                                    <rect key="frame" x="0.0" y="0.0" width="384" height="130"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QN2-sp-sMf">
+                                            <rect key="frame" x="0.0" y="0.0" width="384" height="43.5"/>
+                                            <state key="normal" title="DISEÑO"/>
+                                            <connections>
+                                                <action selector="designButton:" destination="-1" eventType="touchUpInside" id="zXu-Mi-bQP"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="816-uy-Jm2">
+                                            <rect key="frame" x="0.0" y="43.5" width="384" height="43"/>
+                                            <state key="normal" title="REDES SOCIALES"/>
+                                            <connections>
+                                                <action selector="socialMediaButton:" destination="-1" eventType="touchUpInside" id="bMm-k4-vA8"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbx-lu-RA2">
+                                            <rect key="frame" x="0.0" y="86.5" width="384" height="43.5"/>
+                                            <state key="normal" title="HORARIOS"/>
+                                            <connections>
+                                                <action selector="scheduleButton:" destination="-1" eventType="touchUpInside" id="wio-6W-Tta"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="130" id="xP2-Xw-hNn"/>
+                                    </constraints>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wq3-yM-Kp8">
+                                    <rect key="frame" x="132" y="145" width="120" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="HbZ-pc-mLe"/>
+                                        <constraint firstAttribute="width" constant="120" id="plr-Gd-fI3"/>
+                                    </constraints>
+                                    <state key="normal" title="GUARDAR TODO"/>
+                                    <connections>
+                                        <action selector="saveAllButton:" destination="-1" eventType="touchUpInside" id="ej6-SE-wyu"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="wq3-yM-Kp8" firstAttribute="top" secondItem="CGB-UN-ueD" secondAttribute="bottom" constant="15" id="8Xv-TY-GpR"/>
+                                <constraint firstItem="CGB-UN-ueD" firstAttribute="top" secondItem="5fK-JM-Flb" secondAttribute="top" id="8cs-yt-dou"/>
+                                <constraint firstAttribute="trailing" secondItem="CGB-UN-ueD" secondAttribute="trailing" id="D2T-1n-dda"/>
+                                <constraint firstItem="wq3-yM-Kp8" firstAttribute="centerX" secondItem="5fK-JM-Flb" secondAttribute="centerX" id="OW9-Ad-OMT"/>
+                                <constraint firstItem="CGB-UN-ueD" firstAttribute="leading" secondItem="5fK-JM-Flb" secondAttribute="leading" id="dqb-b6-ZIc"/>
+                                <constraint firstAttribute="height" constant="200" id="oM4-ez-0OL"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dz-F6-mGZ">
+                            <rect key="frame" x="20" y="280" width="374" height="518"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" name="whiteVentax"/>
+                    <constraints>
+                        <constraint firstItem="5fK-JM-Flb" firstAttribute="top" secondItem="Hup-ep-Wkk" secondAttribute="bottom" id="KnE-gE-3l6"/>
+                        <constraint firstAttribute="trailing" secondItem="0dz-F6-mGZ" secondAttribute="trailing" constant="20" id="LrT-Ej-DVg"/>
+                        <constraint firstAttribute="trailing" secondItem="Hup-ep-Wkk" secondAttribute="trailing" id="Nlb-6f-K2z"/>
+                        <constraint firstItem="5fK-JM-Flb" firstAttribute="leading" secondItem="Fxv-Ln-Sa1" secondAttribute="leading" constant="15" id="Ofc-qK-yfh"/>
+                        <constraint firstAttribute="trailing" secondItem="5fK-JM-Flb" secondAttribute="trailing" constant="15" id="TnI-JT-y6C"/>
+                        <constraint firstItem="0dz-F6-mGZ" firstAttribute="top" secondItem="5fK-JM-Flb" secondAttribute="bottom" constant="20" id="bjl-qm-gc0"/>
+                        <constraint firstItem="Hup-ep-Wkk" firstAttribute="top" secondItem="Fxv-Ln-Sa1" secondAttribute="top" id="esj-4A-sTw"/>
+                        <constraint firstItem="0dz-F6-mGZ" firstAttribute="leading" secondItem="Fxv-Ln-Sa1" secondAttribute="leading" constant="20" id="g6Y-JM-NZh"/>
+                        <constraint firstAttribute="bottom" secondItem="0dz-F6-mGZ" secondAttribute="bottom" constant="20" id="lyx-pW-sVh"/>
+                        <constraint firstItem="Hup-ep-Wkk" firstAttribute="leading" secondItem="Fxv-Ln-Sa1" secondAttribute="leading" id="pKq-YA-BAS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="whiteVentax"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Fxv-Ln-Sa1" secondAttribute="trailing" id="RND-dJ-hNQ"/>
+                <constraint firstItem="Fxv-Ln-Sa1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="VPQ-hw-2ss"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Fxv-Ln-Sa1" secondAttribute="bottom" id="lj6-Kq-ry5"/>
+                <constraint firstItem="Fxv-Ln-Sa1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wh1-Yd-jS3"/>
+            </constraints>
+            <point key="canvasLocation" x="141" y="87"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sidebar.leading" catalog="system" width="128" height="93"/>
+        <namedColor name="fucsiaVentax">
+            <color red="1" green="0.29019607843137257" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteVentax">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

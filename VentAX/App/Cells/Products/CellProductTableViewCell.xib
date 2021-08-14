@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="251" id="KGk-i7-Jjw" customClass="CellProductTableViewCell" customModule="VentAX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="666" height="251"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="666" height="251"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="em4-S7-2Fd">
+                        <rect key="frame" x="10" y="15" width="646" height="221"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IMW-pc-Qp3">
+                                <rect key="frame" x="0.0" y="48" width="125" height="125"/>
+                                <color key="backgroundColor" name="blueGrayVentax"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="cgK-Te-gjN"/>
+                                    <constraint firstAttribute="width" constant="125" id="h5Z-21-rr6"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5uB-5B-c99">
+                                <rect key="frame" x="125" y="0.0" width="521" height="221"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKD-7n-TGC">
+                                        <rect key="frame" x="0.0" y="5" width="521" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="bKW-iN-ZIx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="inU-qu-YGG">
+                                        <rect key="frame" x="0.0" y="33" width="521" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="B5u-VT-4ze"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sne-RL-9Kn">
+                                        <rect key="frame" x="471" y="191" width="37" height="20"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="N3s-2k-aax"/>
+                                            <constraint firstAttribute="width" constant="35" id="f1S-Sw-EpJ"/>
+                                        </constraints>
+                                        <color key="tintColor" name="aceptedOrderVentax"/>
+                                        <connections>
+                                            <action selector="stateProductSwitch:" destination="KGk-i7-Jjw" eventType="valueChanged" id="u3O-dv-FSe"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ILO-83-dEk">
+                                        <rect key="frame" x="10" y="100.5" width="501" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="inU-qu-YGG" secondAttribute="trailing" id="A5X-e0-GA3"/>
+                                    <constraint firstAttribute="bottom" secondItem="sne-RL-9Kn" secondAttribute="bottom" constant="10" id="K8E-QR-sLb"/>
+                                    <constraint firstAttribute="trailing" secondItem="sne-RL-9Kn" secondAttribute="trailing" constant="15" id="KTG-YI-S04"/>
+                                    <constraint firstItem="inU-qu-YGG" firstAttribute="top" secondItem="iKD-7n-TGC" secondAttribute="bottom" constant="3" id="N1u-7l-cfi"/>
+                                    <constraint firstAttribute="trailing" secondItem="iKD-7n-TGC" secondAttribute="trailing" id="NhT-b8-AEV"/>
+                                    <constraint firstItem="ILO-83-dEk" firstAttribute="leading" secondItem="5uB-5B-c99" secondAttribute="leading" constant="10" id="PPZ-Eb-ect"/>
+                                    <constraint firstItem="ILO-83-dEk" firstAttribute="centerY" secondItem="5uB-5B-c99" secondAttribute="centerY" id="RQB-cz-ceB"/>
+                                    <constraint firstItem="inU-qu-YGG" firstAttribute="leading" secondItem="5uB-5B-c99" secondAttribute="leading" id="Rly-tL-Z0t"/>
+                                    <constraint firstAttribute="trailing" secondItem="ILO-83-dEk" secondAttribute="trailing" constant="10" id="f93-nb-TW0"/>
+                                    <constraint firstItem="ILO-83-dEk" firstAttribute="centerX" secondItem="5uB-5B-c99" secondAttribute="centerX" id="jTG-vo-64Z"/>
+                                    <constraint firstItem="iKD-7n-TGC" firstAttribute="top" secondItem="5uB-5B-c99" secondAttribute="top" constant="5" id="oo4-OA-IYZ"/>
+                                    <constraint firstItem="iKD-7n-TGC" firstAttribute="leading" secondItem="5uB-5B-c99" secondAttribute="leading" id="rpU-Ol-QpX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="whiteVentax"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5uB-5B-c99" secondAttribute="trailing" id="Eh8-sh-w8C"/>
+                            <constraint firstItem="5uB-5B-c99" firstAttribute="leading" secondItem="IMW-pc-Qp3" secondAttribute="trailing" id="TgM-D9-x8e"/>
+                            <constraint firstAttribute="bottom" secondItem="5uB-5B-c99" secondAttribute="bottom" id="ebm-Tz-QDM"/>
+                            <constraint firstItem="5uB-5B-c99" firstAttribute="top" secondItem="em4-S7-2Fd" secondAttribute="top" id="lA9-IZ-5Lo"/>
+                            <constraint firstItem="IMW-pc-Qp3" firstAttribute="centerY" secondItem="em4-S7-2Fd" secondAttribute="centerY" id="lgN-Xd-nc0"/>
+                            <constraint firstItem="IMW-pc-Qp3" firstAttribute="leading" secondItem="em4-S7-2Fd" secondAttribute="leading" id="z4v-6O-ICH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="em4-S7-2Fd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="fsL-h6-DKI"/>
+                    <constraint firstAttribute="bottom" secondItem="em4-S7-2Fd" secondAttribute="bottom" constant="15" id="hUA-vm-wZ6"/>
+                    <constraint firstItem="em4-S7-2Fd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="k0L-oJ-Xgo"/>
+                    <constraint firstAttribute="trailing" secondItem="em4-S7-2Fd" secondAttribute="trailing" constant="10" id="oEN-eN-qWm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="ILO-83-dEk" id="mnC-Bu-8R3"/>
+                <outlet property="mainView" destination="em4-S7-2Fd" id="Pko-3N-1xq"/>
+                <outlet property="priceLabel" destination="inU-qu-YGG" id="deI-7G-4uY"/>
+                <outlet property="productImageView" destination="IMW-pc-Qp3" id="HRB-yT-rtm"/>
+                <outlet property="stateProductOutlet" destination="sne-RL-9Kn" id="UOm-ab-6mZ"/>
+                <outlet property="titleLabel" destination="iKD-7n-TGC" id="7RP-Xh-ytg"/>
+            </connections>
+            <point key="canvasLocation" x="369.56521739130437" y="155.69196428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="aceptedOrderVentax">
+            <color red="0.92900002002716064" green="0.63099998235702515" blue="0.27099999785423279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blueGrayVentax">
+            <color red="0.57647058823529407" green="0.83529411764705885" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteVentax">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

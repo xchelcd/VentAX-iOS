@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1095589159416-4jc3alv5nsstrel11pboov3dgeu7gv2u.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1095589159416-4jc3alv5nsstrel11pboov3dgeu7gv2u</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>1095589159416-1tjaqgs856km9elggrtkv0lsnmujcdlc.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBopJueBaZXSQFyBzXdr0b_ICRHivESbUQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1095589159416</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mx.idax.VentAX</string>
+	<key>PROJECT_ID</key>
+	<string>ventax-3f6ea</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ventax-3f6ea.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1095589159416:ios:d855141a15de033ea4f60d</string>
+	<key>DATABASE_URL</key>
+	<string>https://ventax-3f6ea.firebaseio.com</string>
+</dict>
+</plist>

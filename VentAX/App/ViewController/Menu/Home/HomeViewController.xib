@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="VentAX" customModuleProvider="target">
+            <connections>
+                <outlet property="favCompaniesTableView" destination="7oZ-IP-vDI" id="9Mq-0C-a6J"/>
+                <outlet property="mainTableView" destination="lW4-ns-ewg" id="kJG-0w-08p"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="969-Jm-yBr">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vd2-rv-bNd">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeA-Jt-XKP">
+                                    <rect key="frame" x="15" y="7.5" width="45" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="3JO-B2-idj"/>
+                                        <constraint firstAttribute="height" constant="45" id="lug-IM-hyg"/>
+                                    </constraints>
+                                    <color key="tintColor" name="fucsiaVentax"/>
+                                    <state key="normal">
+                                        <imageReference key="image" image="sidebar.left" catalog="system" renderingMode="template"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="showMenuButton:" destination="-1" eventType="touchUpInside" id="mlM-jb-zj4"/>
+                                    </connections>
+                                </button>
+                                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Buscar" translatesAutoresizingMaskIntoConstraints="NO" id="nFx-qP-GM5">
+                                    <rect key="frame" x="70" y="8" width="274" height="44"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6a-yG-WTG">
+                                    <rect key="frame" x="354" y="7.5" width="45" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="NDN-mo-qSo"/>
+                                        <constraint firstAttribute="width" constant="45" id="dgj-iP-g6A"/>
+                                    </constraints>
+                                    <color key="tintColor" name="fucsiaVentax"/>
+                                    <state key="normal">
+                                        <imageReference key="image" image="line.horizontal.3.decrease" catalog="system" symbolScale="large" renderingMode="template"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="openFilterButton:" destination="-1" eventType="touchUpInside" id="rFc-3F-f6Q"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="whiteVentax"/>
+                            <constraints>
+                                <constraint firstItem="WeA-Jt-XKP" firstAttribute="leading" secondItem="vd2-rv-bNd" secondAttribute="leading" constant="15" id="0TT-GN-L2z"/>
+                                <constraint firstItem="b6a-yG-WTG" firstAttribute="leading" secondItem="nFx-qP-GM5" secondAttribute="trailing" constant="10" id="GCg-Fv-xxG"/>
+                                <constraint firstItem="b6a-yG-WTG" firstAttribute="centerY" secondItem="vd2-rv-bNd" secondAttribute="centerY" id="Hrw-ak-492"/>
+                                <constraint firstAttribute="trailing" secondItem="b6a-yG-WTG" secondAttribute="trailing" constant="15" id="La2-6T-REk"/>
+                                <constraint firstAttribute="height" constant="60" id="cr1-sd-ICV"/>
+                                <constraint firstItem="nFx-qP-GM5" firstAttribute="top" secondItem="vd2-rv-bNd" secondAttribute="top" constant="8" id="csw-I0-rmt"/>
+                                <constraint firstItem="WeA-Jt-XKP" firstAttribute="centerY" secondItem="vd2-rv-bNd" secondAttribute="centerY" id="gvf-wq-9fK"/>
+                                <constraint firstItem="nFx-qP-GM5" firstAttribute="leading" secondItem="WeA-Jt-XKP" secondAttribute="trailing" constant="10" id="qmE-qz-XoZ"/>
+                                <constraint firstAttribute="bottom" secondItem="nFx-qP-GM5" secondAttribute="bottom" constant="8" id="vHn-1g-ebI"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5yA-rD-PQT">
+                            <rect key="frame" x="0.0" y="60" width="414" height="125"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mDK-ns-hGD">
+                                    <rect key="frame" x="10" y="10" width="394" height="105"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7oZ-IP-vDI">
+                                            <rect key="frame" x="0.0" y="0.0" width="394" height="105"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </tableView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="7oZ-IP-vDI" firstAttribute="leading" secondItem="mDK-ns-hGD" secondAttribute="leading" id="DEg-gG-9KO"/>
+                                        <constraint firstItem="7oZ-IP-vDI" firstAttribute="top" secondItem="mDK-ns-hGD" secondAttribute="top" id="d7Q-lx-q8W"/>
+                                        <constraint firstAttribute="bottom" secondItem="7oZ-IP-vDI" secondAttribute="bottom" id="p6v-zq-4rp"/>
+                                        <constraint firstAttribute="trailing" secondItem="7oZ-IP-vDI" secondAttribute="trailing" id="rZV-bb-VcL"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" name="whiteVentax"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="125" id="26S-fY-NaQ"/>
+                                <constraint firstItem="mDK-ns-hGD" firstAttribute="top" secondItem="5yA-rD-PQT" secondAttribute="top" constant="10" id="SaL-aJ-pfr"/>
+                                <constraint firstAttribute="trailing" secondItem="mDK-ns-hGD" secondAttribute="trailing" constant="10" id="aaW-EQ-R6C"/>
+                                <constraint firstItem="mDK-ns-hGD" firstAttribute="leading" secondItem="5yA-rD-PQT" secondAttribute="leading" constant="10" id="baH-kf-xCE"/>
+                                <constraint firstAttribute="bottom" secondItem="mDK-ns-hGD" secondAttribute="bottom" constant="10" id="g2f-Su-aDy"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uPt-AJ-NR7">
+                            <rect key="frame" x="0.0" y="185" width="414" height="633"/>
+                            <subviews>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lW4-ns-ewg">
+                                    <rect key="frame" x="15" y="10" width="384" height="603"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" name="whiteVentax"/>
+                            <constraints>
+                                <constraint firstItem="lW4-ns-ewg" firstAttribute="top" secondItem="uPt-AJ-NR7" secondAttribute="top" constant="10" id="CHq-9j-ewr"/>
+                                <constraint firstAttribute="bottom" secondItem="lW4-ns-ewg" secondAttribute="bottom" constant="20" id="K15-rw-Qbv"/>
+                                <constraint firstItem="lW4-ns-ewg" firstAttribute="leading" secondItem="uPt-AJ-NR7" secondAttribute="leading" constant="15" id="RQq-AK-ehD"/>
+                                <constraint firstAttribute="trailing" secondItem="lW4-ns-ewg" secondAttribute="trailing" constant="15" id="X5T-pw-1Uw"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="vd2-rv-bNd" firstAttribute="top" secondItem="969-Jm-yBr" secondAttribute="top" id="66V-wD-376"/>
+                        <constraint firstItem="uPt-AJ-NR7" firstAttribute="leading" secondItem="969-Jm-yBr" secondAttribute="leading" id="8QU-KC-nk7"/>
+                        <constraint firstAttribute="trailing" secondItem="vd2-rv-bNd" secondAttribute="trailing" id="Er2-GU-goR"/>
+                        <constraint firstItem="5yA-rD-PQT" firstAttribute="top" secondItem="vd2-rv-bNd" secondAttribute="bottom" id="TLf-l9-jab"/>
+                        <constraint firstItem="vd2-rv-bNd" firstAttribute="leading" secondItem="969-Jm-yBr" secondAttribute="leading" id="UUF-yt-LRz"/>
+                        <constraint firstAttribute="trailing" secondItem="uPt-AJ-NR7" secondAttribute="trailing" id="UfK-bD-vJ6"/>
+                        <constraint firstItem="uPt-AJ-NR7" firstAttribute="top" secondItem="5yA-rD-PQT" secondAttribute="bottom" id="XHn-gs-CIM"/>
+                        <constraint firstAttribute="trailing" secondItem="5yA-rD-PQT" secondAttribute="trailing" id="p5p-Gt-cKM"/>
+                        <constraint firstItem="5yA-rD-PQT" firstAttribute="leading" secondItem="969-Jm-yBr" secondAttribute="leading" id="pBT-uR-nIm"/>
+                        <constraint firstAttribute="bottom" secondItem="uPt-AJ-NR7" secondAttribute="bottom" id="ynv-Bt-0Bl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="969-Jm-yBr" secondAttribute="bottom" id="Yi6-Ct-MiJ"/>
+                <constraint firstItem="969-Jm-yBr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fDK-fg-Flh"/>
+                <constraint firstItem="969-Jm-yBr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="g3b-3f-oKq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="969-Jm-yBr" secondAttribute="trailing" id="mQ8-Uw-6kl"/>
+            </constraints>
+            <point key="canvasLocation" x="111.59420289855073" y="75.669642857142847"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="line.horizontal.3.decrease" catalog="system" width="128" height="73"/>
+        <image name="sidebar.left" catalog="system" width="128" height="93"/>
+        <namedColor name="fucsiaVentax">
+            <color red="1" green="0.29019607843137257" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteVentax">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
