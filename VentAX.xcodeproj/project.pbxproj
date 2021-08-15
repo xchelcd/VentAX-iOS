@@ -52,7 +52,6 @@
 		3DC036D62620FA2C00BF8B59 /* ItemNavigationOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC036D52620FA2C00BF8B59 /* ItemNavigationOption.swift */; };
 		3DC4EF0026336B65001450CA /* LogoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4EEFF26336B65001450CA /* LogoutViewModel.swift */; };
 		3DC4EF0426336B92001450CA /* LogoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4EF0326336B92001450CA /* LogoutService.swift */; };
-		3DC4EF0726336BC0001450CA /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4EF0626336BC0001450CA /* Endpoint.swift */; };
 		3DC4EF0C2633B400001450CA /* IDAXViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4EF0B2633B400001450CA /* IDAXViewModel.swift */; };
 		3DC4EF102633B413001450CA /* IDAXService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC4EF0F2633B413001450CA /* IDAXService.swift */; };
 		3DD529F92621624A00586773 /* CellHomeViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD529F72621624A00586773 /* CellHomeViewTableViewCell.swift */; };
@@ -146,7 +145,6 @@
 		3DC036D52620FA2C00BF8B59 /* ItemNavigationOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemNavigationOption.swift; sourceTree = "<group>"; };
 		3DC4EEFF26336B65001450CA /* LogoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewModel.swift; sourceTree = "<group>"; };
 		3DC4EF0326336B92001450CA /* LogoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutService.swift; sourceTree = "<group>"; };
-		3DC4EF0626336BC0001450CA /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		3DC4EF0B2633B400001450CA /* IDAXViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDAXViewModel.swift; sourceTree = "<group>"; };
 		3DC4EF0F2633B413001450CA /* IDAXService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDAXService.swift; sourceTree = "<group>"; };
 		3DD41A1E261D51FB000B529B /* VentAX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VentAX.entitlements; sourceTree = "<group>"; };
@@ -639,7 +637,6 @@
 				3DE488A5261AED740056FCD2 /* Constants.swift */,
 				3DE488A9261AF5E60056FCD2 /* Extensions */,
 				3DAF97622622AD8E00369B1B /* Util.swift */,
-				3DC4EF0626336BC0001450CA /* Endpoint.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -949,7 +946,6 @@
 				3DAF97772622D53C00369B1B /* IDAXViewController.swift in Sources */,
 				3DAF97632622AD8E00369B1B /* Util.swift in Sources */,
 				3DD601C82620093A004F1ACD /* LoginService.swift in Sources */,
-				3DC4EF0726336BC0001450CA /* Endpoint.swift in Sources */,
 				3DC036D22620F0BC00BF8B59 /* CellNavigationTableViewCell.swift in Sources */,
 				3D5B60BB262BF17E003AB4C8 /* EntrepreneurViewController.swift in Sources */,
 				3D88546F261C10D300B5CD08 /* LoginViewModel.swift in Sources */,
