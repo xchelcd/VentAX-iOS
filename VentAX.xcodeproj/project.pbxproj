@@ -25,6 +25,7 @@
 		3D694919262BCF8800742792 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D694918262BCF8800742792 /* HomeViewModel.swift */; };
 		3D69491D262BCF9300742792 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D69491C262BCF9300742792 /* HomeService.swift */; };
 		3D6CB85C26361DB200E1B618 /* SettingsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6CB85B26361DB200E1B618 /* SettingsProtocol.swift */; };
+		3D7849A426C89D3A005893CD /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7849A326C89D3A005893CD /* EndPoint.swift */; };
 		3D885442261BFDD300B5CD08 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D885441261BFDD300B5CD08 /* Button.swift */; };
 		3D885445261BFE7300B5CD08 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D885444261BFE7300B5CD08 /* Color.swift */; };
 		3D885458261C0CDC00B5CD08 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D885457261C0CDC00B5CD08 /* Connection.swift */; };
@@ -118,6 +119,7 @@
 		3D694918262BCF8800742792 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		3D69491C262BCF9300742792 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		3D6CB85B26361DB200E1B618 /* SettingsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProtocol.swift; sourceTree = "<group>"; };
+		3D7849A326C89D3A005893CD /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		3D885441261BFDD300B5CD08 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		3D885444261BFE7300B5CD08 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		3D885457261C0CDC00B5CD08 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
@@ -637,6 +639,7 @@
 				3DE488A5261AED740056FCD2 /* Constants.swift */,
 				3DE488A9261AF5E60056FCD2 /* Extensions */,
 				3DAF97622622AD8E00369B1B /* Util.swift */,
+				3D7849A326C89D3A005893CD /* EndPoint.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -952,6 +955,7 @@
 				3DE48852261AC29F0056FCD2 /* CompanyConfigurationModel.swift in Sources */,
 				3DA358ED262401500058D6FA /* ScheduleView.swift in Sources */,
 				3DD529F92621624A00586773 /* CellHomeViewTableViewCell.swift in Sources */,
+				3D7849A426C89D3A005893CD /* EndPoint.swift in Sources */,
 				3DA358D92623FC270058D6FA /* SettingsViewController.swift in Sources */,
 				3DE4884E261AC1920056FCD2 /* Company.swift in Sources */,
 				3DE6492626297680008056F3 /* CellProductTableViewCell.swift in Sources */,
