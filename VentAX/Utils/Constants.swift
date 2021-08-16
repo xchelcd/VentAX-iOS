@@ -9,8 +9,8 @@ import Foundation
 
 class Constants{
     public static let VERSION = "v2/"
-    public static let MAIN_URL = "https://idaxmx.com/Ventax/"
-    public static let MIDDLE_URL = "interface.php?function="
+    public static let MAIN_URL = EndPoint.ROOT_URL
+    public static let MIDDLE_URL = EndPoint.REST_URL
     public static let END_POINT = "\(MAIN_URL)\(VERSION)\(MIDDLE_URL)"
     public static let IOS = 1
     

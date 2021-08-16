@@ -9,7 +9,8 @@ import Foundation
 
 class HomeService{
     
-    private let endPoint = Endpoint.home
+    //private let endPoint = Endpoint.home
+    private let endPoint = EndPoint.ENTREPRENEUR_MODEL
     
     var data:EntrepreneurModel?
     

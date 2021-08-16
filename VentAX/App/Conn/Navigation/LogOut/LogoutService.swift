@@ -8,7 +8,8 @@
 import Foundation
 
 class LogoutService{
-    private let endpoint = Endpoint.logOut
+    //private let endpoint = Endpoint.logOut
+    private let endpoint = EndPoint.LOG_OUT
     
     func LogOutAccount(userId:Int, token:String, onLogoutSuccess: @escaping (_ isLogout:Bool) -> ()){
         guard let url = URL(string:"\(Constants.END_POINT)\(endpoint)") else { return }

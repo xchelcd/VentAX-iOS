@@ -9,7 +9,8 @@ import Foundation
 
 class IDAXService{
     
-    private let endpoint = Endpoint.suggestion
+    //private let endpoint = Endpoint.suggestion
+    private let endpoint = EndPoint.INSERT_SUGGESTION
     
     func InsertSuggestion(_ userId:Int, _ suggestion:String, onSuccessfull: @escaping (_ finished:Bool) -> ()){
         guard let url:URL = URL(string: "\(Constants.END_POINT)\(endpoint)") else { return }

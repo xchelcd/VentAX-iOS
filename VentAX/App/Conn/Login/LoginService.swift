@@ -10,8 +10,10 @@ import Foundation
 
 class LoginService{
     
-    private let endPointNotLogged = Endpoint.notLogged//"GetUserByCredentialsAndCheckAffiliate"//Endpoint = .notLogged
-    private let endPointLogged = Endpoint.logged//"GetCheckUserByUserCredentials"//:Endpoint = .logged
+    private let endPointNotLogged = EndPoint.GET_CREDENTIALS_AFFILIATE
+    private let endPointLogged = EndPoint.CHECK_USER_BY_USER_CREDENTIALS
+    //private let endPointNotLogged = Endpoint.notLogged/
+    //private let endPointLogged = Endpoint.logged
     var data:LoginModel?
     
     var url:URL?
